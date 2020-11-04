@@ -1,0 +1,25 @@
+[package]
+name = "prometheus-static-metric"
+version = "0.3.0"
+license = "Apache-2.0"
+authors = ["me@breeswish.org"]
+description = "Static metric helper utilities for rust-prometheus."
+repository = "https://github.com/pingcap/rust-prometheus"
+homepage = "https://github.com/pingcap/rust-prometheus"
+documentation = "https://docs.rs/prometheus-static-metric"
+include = [
+    "LICENSE",
+    "Cargo.toml",
+    "src/**/*.rs",
+]
+
+[dependencies]
+static-metric-proc-macros = { path = "./proc-macros" }
+proc-macro-hack = "0.5"
+
+[dev-dependencies]
+prometheus = { path = "../" }
+lazy_static = "1.4"
+
+[features]
+default = []

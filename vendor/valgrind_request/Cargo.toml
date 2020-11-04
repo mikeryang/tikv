@@ -1,0 +1,9 @@
+[package]
+name = "valgrind_request"
+version = "1.1.0"
+description = "wrapper for Valgrind client requests"
+authors = ["Nathan Zadoks <nathan@nathan7.eu>"]
+license = "Zlib"
+homepage = "https://github.com/nathan7/libvalgrind_request"
+repository = "https://github.com/nathan7/libvalgrind_request"
+documentation = "https://nathan7.github.io/libvalgrind_request"

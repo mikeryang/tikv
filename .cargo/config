@@ -1,0 +1,75 @@
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source."https://github.com/breeswish/slog-global.git"]
+git = "https://github.com/breeswish/slog-global.git"
+rev = "0e23a5baff302a9d7bccd85f8f31e43339c2f2c1"
+replace-with = "vendored-sources"
+
+[source."https://github.com/busyjay/rust-snappy.git"]
+git = "https://github.com/busyjay/rust-snappy.git"
+branch = "static-link"
+replace-with = "vendored-sources"
+
+[source."https://github.com/crossbeam-rs/crossbeam.git"]
+git = "https://github.com/crossbeam-rs/crossbeam.git"
+tag = "crossbeam-0.7.3"
+replace-with = "vendored-sources"
+
+[source."https://github.com/pingcap-incubator/minitrace-rust.git"]
+git = "https://github.com/pingcap-incubator/minitrace-rust.git"
+branch = "master"
+replace-with = "vendored-sources"
+
+[source."https://github.com/pingcap/kvproto.git"]
+git = "https://github.com/pingcap/kvproto.git"
+branch = "master"
+replace-with = "vendored-sources"
+
+[source."https://github.com/pingcap/raft-rs"]
+git = "https://github.com/pingcap/raft-rs"
+branch = "master"
+replace-with = "vendored-sources"
+
+[source."https://github.com/pingcap/rust-protobuf"]
+git = "https://github.com/pingcap/rust-protobuf"
+rev = "b67d432c1b74350b38a5d96ddf885ac6c3ff46f5"
+replace-with = "vendored-sources"
+
+[source."https://github.com/pingcap/tipb.git"]
+git = "https://github.com/pingcap/tipb.git"
+branch = "master"
+replace-with = "vendored-sources"
+
+[source."https://github.com/tikv/fail-rs.git"]
+git = "https://github.com/tikv/fail-rs.git"
+rev = "2cf1175a1a5cc2c70bd20ebd45313afd69b558fc"
+replace-with = "vendored-sources"
+
+[source."https://github.com/tikv/procinfo-rs"]
+git = "https://github.com/tikv/procinfo-rs"
+rev = "5125fc1a69496b73b26b3c08b6e8afc3c665a56e"
+replace-with = "vendored-sources"
+
+[source."https://github.com/tikv/raft-engine.git"]
+git = "https://github.com/tikv/raft-engine.git"
+branch = "master"
+replace-with = "vendored-sources"
+
+[source."https://github.com/tikv/rust-prometheus.git"]
+git = "https://github.com/tikv/rust-prometheus.git"
+rev = "fd122caa03de8e7e5e4fae9372583aebf19e39f6"
+replace-with = "vendored-sources"
+
+[source."https://github.com/tikv/rust-rocksdb.git"]
+git = "https://github.com/tikv/rust-rocksdb.git"
+branch = "master"
+replace-with = "vendored-sources"
+
+[source."https://github.com/tikv/yatp.git"]
+git = "https://github.com/tikv/yatp.git"
+branch = "master"
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"

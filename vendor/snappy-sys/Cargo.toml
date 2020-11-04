@@ -1,0 +1,16 @@
+[package]
+name = "snappy-sys"
+version = "0.1.0"
+authors = ["Daniel Micay <danielmicay@gmail.com>", "Jeff Belgum <jeffbelgum@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/JeffBelgum/rust-snappy"
+description = "Raw bindings to the Google compression library 'snappy'"
+links = "snappy"
+build = "build.rs"
+
+[dependencies]
+libc = "0.2"
+
+[build-dependencies]
+pkg-config = "0.3.7"
+cmake = "0.1"

@@ -1,0 +1,35 @@
+[package]
+name = "rocksdb"
+description = "A Rust wrapper for Facebook's RocksDB embeddable database."
+version = "0.3.0"
+authors = ["Tyler Neely <t@jujit.su>", "David Greenberg <dsg123456789@gmail.com>"]
+license = "Apache-2.0"
+keywords = ["database", "embedded", "LSM-tree", "persistence"]
+homepage = "https://github.com/spacejam/rust-rocksdb"
+exclude = [
+  ".gitignore",
+  ".travis.yml",
+  "deploy.sh",
+  "tests/**/*",
+  "benches/**/*",
+]
+
+[features]
+default = []
+encryption = ["librocksdb_sys/encryption"]
+jemalloc = ["librocksdb_sys/jemalloc"]
+portable = ["librocksdb_sys/portable"]
+sse = ["librocksdb_sys/sse"]
+static_libcpp = ["librocksdb_sys/static_libcpp"]
+valgrind = []
+# rocksdb-cloud integration
+cloud = ["librocksdb_sys/cloud"]
+
+[dependencies]
+libc = "0.2.11"
+librocksdb_sys = { path = "librocksdb_sys" }
+
+[dev-dependencies]
+crc = "1.8"
+rand = "0.7"
+tempfile = "3.1"

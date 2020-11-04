@@ -1,0 +1,26 @@
+[package]
+name = "procinfo"
+# NB: When modifying, also modify html_root_url in lib.rs.
+version = "0.4.2"
+authors = ["Dan Burkert <dan@danburkert.com>"]
+license = "MIT/Apache-2.0"
+repository = "https://github.com/danburkert/procinfo-rs"
+documentation = "https://docs.rs/procinfo"
+description = "A library for accessing Linux process and system information"
+keywords = ["proc", "process", "system", "Linux"]
+exclude = [
+  ".gitignore",
+  ".travis.yml",
+]
+build = "build.rs"
+
+[badges]
+travis-ci = { repository = "danburkert/procinfo-rs" }
+
+[dependencies]
+libc = "0.2"
+nom = { version = "2", features = ["verbose-errors"] }
+byteorder = "1.0"
+
+[build-dependencies]
+rustc_version = "0.2"
